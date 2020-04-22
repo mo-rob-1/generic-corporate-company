@@ -1,0 +1,426 @@
+/* CSS RESET START */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET END */
+
+/* CSS STARTS */
+* {
+	box-sizing: border-box;
+  }
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header,
+footer {
+	background-color: rgb(20, 51, 99)
+}
+
+.logo__title {
+	font-family: 'Julius Sans One', sans-serif;
+	color: #fff;
+	letter-spacing: 10px;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+header {
+	padding: 1.5em;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 6px;
+}
+
+nav li:hover {
+	text-decoration: underline;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+.logo {
+	cursor: pointer;
+}
+
+.hero {
+	position: relative;
+	background-image: url("images/photo-of-people-having-a-meeting.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 550px;
+}
+
+.hero__heading,
+.hero__desc {
+	color: #fff;	
+}
+
+.hero__content {
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 60px;
+}
+
+.hero__heading,
+.three-col__heading {
+	font-size: 34px;
+	font-family: 'Oswald', sans-serif;
+	padding-bottom: 30px;
+}
+
+.hero__desc {
+	
+	line-height: 1.5;
+	padding-bottom: 60px;
+}
+
+.hero__underline {
+	width: 150px;
+	height: 4px;
+	background-color: #fff;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.hero__btn {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 18px 40px 18px 40px;
+	border: 2px solid #fff;
+}
+
+.hero__btn:hover {
+	background-color: #fff;
+	color: #000;
+	transition: 0.5s;
+}
+
+.three-col {
+	background-color: #272728;
+	line-height: 1.5;
+	text-align: center;
+	color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.three-col__heading {
+	padding-bottom: 10px;
+	text-transform: capitalize;
+}
+
+.three_col__subheading {
+	font-family: 'Oswald', sans-serif;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+
+.col {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.fa-chart-bar,
+.fa-pound-sign,
+.fa-briefcase {
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+.homepage-desc {
+	background-color: #F1F1F3;
+	line-height: 1.5;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.homepage-dec__heading {
+	font-family: 'Oswald', sans-serif;
+	text-transform: capitalize;
+	font-size: 32px;
+	padding-bottom: 30px;
+}
+
+.desc__text-1,
+.desc__text-2,
+.desc__text-3 {
+	margin-bottom: 40px;
+}
+
+.contact {
+	background-color: #272728;
+	color: #fff;
+}
+
+.fa-twitter,
+.fa-facebook-square,
+.fa-instagram {
+	color: #fff;
+}
+
+.contact {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 26px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	line-height: 1.5;
+}
+
+.contact__socials-icons {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	padding-top: 10px;
+	font-size: 26px;
+}
+
+.contact__title,
+.contact__title--socials {
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+	padding-bottom: 22px;
+}
+
+.fab {
+	margin-right: 18px;
+}
+
+.fab:hover {
+	color: #939598;
+	transition: 0.3s;
+}
+
+.copyright {
+	text-align: center;
+	color: #fff;
+	padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+header {
+	padding-bottom: 50px;
+	padding-left: 36px;
+	padding-right: 36px; 
+}
+
+.logo {
+float: left;
+}
+
+nav {
+float: right;
+
+}
+
+nav li {
+	margin-right: 40px;
+}
+
+.hero__desc {
+	margin-top: 0;
+	padding-bottom: 62px;
+	font-style: 20px;
+}
+
+.hero__content,
+.three-col__content,
+.homepage-desc__container,
+.contact__content {
+	margin-left: 36px;
+	margin-right: 36px;
+}
+
+.hero__heading {
+	font-size: 46px;
+}
+
+.homepage-desc__text {
+	text-align: left;
+}
+
+.col-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-gap: 55px;
+}
+
+.three_col__subheading {
+	font-size: 24px;
+}
+
+.contact {
+	padding-right: 46px;
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+header {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.hero__content,
+.three-col__content,
+.homepage-desc__container,
+.contact__content {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.hero__heading {
+	font-size: 56px;
+	padding-bottom: 0;
+}
+
+.hero__desc {
+	padding-bottom: 54px;
+	margin-top: 30px;
+}
+
+.hero__content {
+	padding-top: 120px;
+}
+
+.hero__underline {
+	margin-top: 30px;
+}
+
+.fa-chart-bar,
+.fa-pound-sign,
+.fa-briefcase {
+	font-size: 80px;
+}
+
+.contact {
+	padding-right: 100px;
+	padding-left: 12px;
+}
+
+.contact__title,
+.contact__title--socials {
+	font-size: 26px;
+}
+
+.homepage-desc__2col {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-gap: 40px;
+}
+
+.desc__text-1, 
+.desc__text-2, 
+.desc__text-3 {
+	margin-bottom: 6px;
+}
+
+.homepage-dec__heading {
+	padding-bottom: 44px;
+}
+
+.homepage-desc__text {
+	text-align: left;
+}
+}
+
+@media only screen and (min-width: 1400px) {
+.hero__content,
+.three-col__content,
+.homepage-desc__container,
+.contact__content {
+	margin-left: 280px;
+	margin-right: 280px;
+}
+
+.hero__desc {
+	margin-top: 28px;
+}
+
+.three_col__subheading {
+	font-size: 28px;
+}
+
+.contact {
+	padding-right: 310px;
+}
+}
+
+@media only screen and (min-width: 1600px) {
+.hero__desc {
+	margin-right: 180px;
+	margin-left: 180px
+}
+}
+
+/* CSS ENDS */
